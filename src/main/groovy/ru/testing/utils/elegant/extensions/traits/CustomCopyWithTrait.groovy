@@ -1,4 +1,4 @@
-package ru.testing.utils.elegant.extensions
+package ru.testing.utils.elegant.extensions.traits
 
 trait CustomCopyWithTrait {
     <T> T customCopyWith(Map args = [:]) {

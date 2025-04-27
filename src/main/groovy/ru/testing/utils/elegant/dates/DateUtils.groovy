@@ -1,7 +1,5 @@
 package ru.testing.utils.elegant.dates
 
-
-import groovy.transform.Memoized
 import ru.testing.utils.elegant.dates.enums.ChronoUnitEnum
 import ru.testing.utils.elegant.dates.enums.DateTimeFormatEnum
 import ru.testing.utils.elegant.dates.enums.ZoneProfileEnum
@@ -84,7 +82,6 @@ class DateUtils {
         return results
     }
 
-    @Memoized(maxCacheSize = 5)
     private DateTimeFormatter formatterByPattern(String patternString = pattern) {
         return DateTimeFormatter.ofPattern(patternString).withZone(zoneId)
     }
